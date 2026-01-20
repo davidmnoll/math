@@ -1,9 +1,13 @@
 
 
 
-docs:
+docs-show: 
+	make docs-build
+	npx serve docs
+
+docs-build:
 	lake build Math:docs
-	mv ./.build/docs ./docs
+	cp -r ./.lake/build/doc ./docs
 
 build: 
 	lake build

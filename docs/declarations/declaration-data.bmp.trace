@@ -1,0 +1,20 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs": null,
+ "log":
+ [{"message": "Documentation indexing", "level": "info"},
+  {"message":
+   ".> /home/dmn/main/code/project/math/.lake/packages/doc-gen4/.lake/build/bin/doc-gen4 index --build /home/dmn/main/code/project/math/.lake/build",
+   "level": "trace"}],
+ "inputs":
+ [["/home/dmn/main/code/project/math/.lake/packages/doc-gen4/.lake/build/bin/doc-gen4",
+   "802c9132541976da"],
+  ["<nil>", "7b9f5ff346c3f45f"],
+  ["<collection>",
+   [["/home/dmn/main/code/project/math/.lake/build/doc/Math/PropLogic.html",
+     "f0b820e1d359a415"],
+    ["/home/dmn/main/code/project/math/.lake/build/doc/Math/Basic.html",
+     "96407b743460d947"],
+    ["/home/dmn/main/code/project/math/.lake/build/doc/Math.html",
+     "3a65f19eb04fa865"]]]],
+ "depHash": "aa067d8dfe1f3e6a"}

@@ -97,5 +97,47 @@ end Ch1
 
 
 
+namespace Ch2
+
+axiom M : Prop -- M: Those creatures are men in suits.
+axiom C : Prop -- C: Those creatures are chimpanzees.
+axiom G : Prop -- G: Those creatures are gorillas.
+
+def partA : List Prop := [
+  Not M, -- 1. Those creatures are not men in suits.
+  (Or M (Not M)), -- 2. Those creatures are men in suits, or they are not.
+  (Or C G),-- 3. Those creatures are either gorillas or chimpanzees.
+  (And (Not C) (Not G)), -- 4. Those creatures are neither gorillas nor chimpanzees.
+  (C -> Not (Or M G)), -- 5. If those creatures are chimpanzees, then they are neither gorillas nor men in suits.
+  Or M (Or C G) -- 6. Unless those creatures are men in suits, they are either chimpanzees or they are gorillas.
+]
+
+axiom A : Prop -- A: Mister Ace was murdered.
+  axiom B : Prop -- B: The butler did it.
+  axiom C' : Prop -- C: The cook did it.
+axiom D : Prop -- D: The Duchess is lying.
+axiom E : Prop -- E: Mister Edge was murdered.
+axiom F : Prop -- F: The murder weapon was a frying pan.
+
+
+def partB : List Prop := [
+  Or A E, -- 1. Either Mister Ace or Mister Edge was murdered.
+  A -> C', -- 2. If Mister Ace was murdered, then the cook did it.
+  E -> Not C', -- 3. If Mister Edge was murdered, then the cook did not do it.
+  Or B D, -- 4. Either the butler did it, or the Duchess is lying.
+  -- Incorrect first response: D -> C', -- 5. The cook did it only if the Duchess is lying.
+  C' -> D, -- 5. The cook did it only if the Duchess is lying.
+  F -> C', -- 6. If the murder weapon was a frying pan, then the culprit must have been the cook.
+  Not F -> Or B C', -- 7. If the murder weapon was not a frying pan, then the culprit was either the cook or the butler.
+  And (A -> Not E) (Not E -> A), -- 8. Mister Ace was murdered if and only if Mister Edge was not murdered.
+  Or D E, -- 9. The Duchess is lying, unless it was Mister Edge who was murdered.
+  A -> F, -- 10. If Mister Ace was murdered, he was done in with a frying pan.
+  -- Incorrect first response: C' -> B, -- 11. Since the cook did it, the butler did not.
+  C' -> Not B, -- 11. Since the cook did it, the butler did not.
+  D, -- 12. Of course the Duchess is lying!
+]
+
+
+end Ch2
 
 end PropLogic

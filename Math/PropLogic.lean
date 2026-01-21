@@ -138,6 +138,84 @@ def partB : List Prop := [
 ]
 
 
+
+
+? Part C Using the symbolization key given, translate each English-language
+sentence into SL.
+E1: Ava is an electrician.
+E2: Harrison is an electrician.
+F1: Ava is a firefighter.
+F2: Harrison is a firefighter.
+S1: Ava is satisfied with her career.
+S2: Harrison is satisfied with his career.
+1. Ava and Harrison are both electricians.
+2. If Ava is a firefighter, then she is satisfied with her career.
+3. Ava is a firefighter, unless she is an electrician.
+4. Harrison is an unsatisfied electrician.
+5. Neither Ava nor Harrison is an electrician.
+6. Both Ava and Harrison are electricians, but neither of them find it satisfying.
+7. Harrison is satisfied only if he is a firefighter.
+8. If Ava is not an electrician, then neither is Harrison, but if she is, then
+he is too.
+9. Ava is satisfied with her career if and only if Harrison is not satisfied with
+his.
+10. If Harrison is both an electrician and a firefighter, then he must be satisfied
+with his work.
+11. It cannot be that Harrison is both an electrician and a firefighter.
+12. Harrison and Ava are both firefighters if and only if neither of them is an
+electrician.
+
+
+
+
+
+? Part D Give a symbolization key and symbolize the following sentences in
+SL.
+1. Alice and Bob are both spies.
+2. If either Alice or Bob is a spy, then the code has been broken.
+3. If neither Alice nor Bob is a spy, then the code remains unbroken.
+4. The German embassy will be in an uproar, unless someone has broken
+the code.
+5. Either the code has been broken or it has not, but the German embassy
+will be in an uproar regardless.
+6. Either Alice or Bob is a spy, but not both.
+Part E Give a symbolization key and symbolize the following sentences in SL.
+1. If Gregor plays first base, then the team will lose.
+2. The team will lose unless there is a miracle.
+3. The team will either lose or it won’t, but Gregor will play first base
+regardless.
+4. Gregor’s mom will bake cookies if and only if Gregor plays first base.
+5. If there is a miracle, then Gregor’s mom will not bake cookies.
+Part F For each argument, write a symbolization key and translate the argument as well as possible into SL.
+1. If Dorothy plays the piano in the morning, then Roger wakes up cranky.
+Dorothy plays piano in the morning unless she is distracted. So if Roger
+does not wake up cranky, then Dorothy must be distracted.
+2. It will either rain or snow on Tuesday. If it rains, Neville will be sad. If
+it snows, Neville will be cold. Therefore, Neville will either be sad or cold
+on Tuesday.
+3. If Zoog remembered to do his chores, then things are clean but not neat.
+If he forgot, then things are neat but not clean. Therefore, things are
+either neat or clean— but not both.
+? Part G For each of the following: (a) Is it a wff of SL? (b) Is it a sentence
+of SL, allowing for notational conventions?
+1. (A)
+2. J374 ∨ ¬J374
+3. ¬¬¬¬F
+4. ¬ & S
+5. (G & ¬G)
+6. A → A
+7. (A → (A & ¬F)) ∨ (D ↔ E)
+8. [(Z ↔ S) → W] & [J ∨ X]
+9. (F ↔ ¬D → J) ∨ (C & D)
+Part H
+1. Are there any wffs of SL that contain no sentence letters? Why or why
+not?
+2. In the chapter, we symbolized an exclusive or using ∨, & , and ¬. How
+could you translate an exclusive or using only two connectives? Is there
+any way to translate an exclusive or using only one connective?
+
 end Ch2
+
+
 
 end PropLogic

@@ -2,5 +2,5 @@ import Math
 
 
 def main : IO Unit := do
-  _ <- pure prop_logic
+  _ <- pure math
   IO.println s!"Hello!"

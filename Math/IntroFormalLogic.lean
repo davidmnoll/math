@@ -6,6 +6,7 @@ https://www.fecundity.com/codex/forallx.pdf
 namespace PropLogic
 
 
+
 namespace Ch1
 
 /-
@@ -139,7 +140,7 @@ def partB : List Prop := [
 
 
 
-
+/-
 ? Part C Using the symbolization key given, translate each English-language
 sentence into SL.
 E1: Ava is an electrician.
@@ -164,9 +165,11 @@ with his work.
 11. It cannot be that Harrison is both an electrician and a firefighter.
 12. Harrison and Ava are both firefighters if and only if neither of them is an
 electrician.
+-/
 
 
 
+/-
 
 
 ? Part D Give a symbolization key and symbolize the following sentences in
@@ -213,9 +216,19 @@ not?
 2. In the chapter, we symbolized an exclusive or using ∨, & , and ¬. How
 could you translate an exclusive or using only two connectives? Is there
 any way to translate an exclusive or using only one connective?
+-/
+
+
+def ch2 : Unit := Id.run do
+  _ <- partA
+  _ <- partB
 
 end Ch2
 
+
+def propLogic : Unit := Id.run do
+  Ch1.ch1
+  Ch2.ch2
 
 
 end PropLogic
